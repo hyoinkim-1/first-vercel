@@ -23,7 +23,7 @@ app.post(`/api/groq`,async (req, res)=>{
         res.status(502).json({ error: err.message })
     }
 });
-
+// 주석테스트
 const port = process.env.PORT ?? 3000
 app.listen(port, ()=>{
     console.log(`http://localhost:${port}`)
